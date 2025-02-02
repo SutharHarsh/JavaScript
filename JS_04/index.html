@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS_04: Loops in JavaScript</h1>
+</body>
+
+    <script>
+        // For Loop
+        console.log("------------ For loop")
+        for (let index = 0; index < 5; index++) {
+            const element = index;
+            console.log(element)
+        }
+
+        const array = ["this is new","Harsh","hello"]
+
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(element)
+        }
+
+        // While Loop
+        console.log("------------ While loop")
+        let a = 8
+        while (a > 5) {
+            console.log("Iteration");
+            a = a - 1;
+        }
+
+        // Do while loop
+        console.log("------------ Do-While loop")
+        do {
+            console.log("Hello");
+            a = a - 1;
+        } while (a > 8);
+
+        // For in loop
+        console.log("------------ For-in loop")
+        const obj = {
+            "name":"Harsh",
+            "age":21
+        }
+
+        for (const key in obj) {
+            if (Object.prototype.hasOwnProperty.call(obj, key)) {
+                const element = obj[key];
+                console.log(`${key} : ${element}`);
+            }
+        }
+
+        // For of loop
+        console.log("------------ For-of loop")
+        for (const element of array) {
+            console.log(element)
+        }
+
+        // For-Each loop
+        console.log("------------ For-Each loop")
+        array.forEach(element => {
+            console.log(element)
+        });
+
+        // Loop control statements - break and continue
+        let b = 3
+
+        for (const element of array) {
+            if(element == "Harsh") {
+                if(b > 2) {
+                    console.log("loop will break here!");
+                    break; // break statement
+                } else {
+                    console.log("loop will continue");
+                    continue; // continue statement
+                }
+            }
+        }
+
+    </script>
+
+</html>
