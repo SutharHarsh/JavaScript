@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS_05</h1>
+  </body>
+  <script>
+
+    function hello() {
+        console.log("Hello from function!")
+    }
+
+    hello()
+
+    // sum of 2 numbers through function
+    function sumTwoNumbers(a,b) {
+        console.log(a + b)
+    }
+
+    sumTwoNumbers(2,3)
+
+    // default values in arguments
+    function sumThreeNumbers(a,b,c=3) {
+        console.log(a + b + c)
+    }
+
+    sumThreeNumbers(1,2,3)
+    sumThreeNumbers(1,5)
+
+    // storing function into variable
+    const func = function (a,b)  {
+        return a+b
+    }
+
+    console.log(func(2,3))
+
+    // Arrow function
+    const multiply = (a,b) => { return a*b }
+
+    console.log(multiply(2,3))
+  </script>
+</html>
