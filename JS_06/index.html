@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS_06: String in JavaScript</h1>
+  </body>
+
+  <script>
+    let singleQuote = "hello world";
+    let secondQuote = "this is a line";
+    console.log(singleQuote.charAt(4));
+    console.log(singleQuote.length);
+
+    // Template Literals
+    let greetings = ` This is a word: ${singleQuote} `;
+    console.log(greetings);
+
+    // Escape Sequence
+    console.log(singleQuote.toUpperCase());
+    console.log(singleQuote.slice(1, 4));
+    console.log(singleQuote.replace("hello", "hi"));
+    console.log(secondQuote.concat(singleQuote));
+  </script>
+</html>
